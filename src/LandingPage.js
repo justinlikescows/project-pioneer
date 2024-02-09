@@ -4,6 +4,13 @@ import { ReactComponent as TechIcon } from "./imgs/tech.svg"; // Assuming 'tech.
 import { ReactComponent as Logo } from "./imgs/logo.svg"; // Assuming 'tech.svg' is in the 'icons' directory relative to this component file
 import { ReactComponent as Idea } from "./imgs/idea.svg"; // Assuming 'tech.svg' is in the 'icons' directory relative to this component file
 import { ReactComponent as Screening } from "./imgs/screening.svg"; // Assuming 'tech.svg' is in the 'icons' directory relative to this component file
+import { ReactComponent as Interview } from "./imgs/interview.svg"; // Assuming 'tech.svg' is in the 'icons' directory relative to this component file
+import { ReactComponent as Project } from "./imgs/project.svg"; // Assuming 'tech.svg' is in the 'icons' directory relative to this component file
+import { ReactComponent as Team } from "./imgs/teamwork.svg"; // Assuming 'tech.svg' is in the 'icons' directory relative to this component file
+import { ReactComponent as Scrum } from "./imgs/scrum.svg"; // Assuming 'tech.svg' is in the 'icons' directory relative to this component file
+import hackathonImage from "./imgs/hackathon.jpg"; // Import the image
+import hackathonImage2 from "./imgs/hackthon2.jpg"; // Import the image
+import hackathonImage3 from "./imgs/hackathon3.jpg"; // Import the image
 
 function LandingPage() {
   return (
@@ -45,7 +52,7 @@ function LandingPage() {
             <div class="block lg:hidden pr-4">
               <button
                 id="nav-toggle"
-                class="flex items-center p-1 text-pink-800 hover:text-gray-900 focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out"
+                class="flex items-center p-1 hover:text-gray-900 focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out"
               >
                 <svg
                   class="fill-current h-6 w-6"
@@ -67,23 +74,23 @@ function LandingPage() {
                     class="inline-block py-2 px-4 text-white font-bold no-underline"
                     href="#"
                   >
-                    Active
+                    Events
                   </a>
                 </li>
                 <li class="mr-3">
                   <a
-                    class="inline-block text-white no-underline hover:text-gray-800 hover:text-underline py-2 px-4"
+                    class="inline-block text-white no-underline font-bold hover:text-gray-800 hover:text-underline py-2 px-4"
                     href="#"
                   >
-                    link
+                    Your Profile
                   </a>
                 </li>
                 <li class="mr-3">
                   <a
-                    class="inline-block text-white no-underline hover:text-gray-800 hover:text-underline py-2 px-4"
+                    class="inline-block text-white no-underline font-bold hover:text-gray-800 hover:text-underline py-2 px-4"
                     href="#"
                   >
-                    link
+                    Learn More
                   </a>
                 </li>
               </ul>
@@ -159,50 +166,45 @@ function LandingPage() {
         </div>
         <section class="bg-white border-b py-8">
           <div class="container max-w-5xl mx-auto m-8">
-          <br />
+            <br />
 
             <h2 class="w-full my-2 text-5xl font-bold leading-tight text-center text-gray-800">
               PROJECT: Pioneer
             </h2>
-        
-            
+
             <div class="flex flex-wrap">
-                <div class="w-5/6 sm:w-1/2 p-6 tw-self-center">
-                  <h3 class="text-3xl text-gray-800 font-bold leading-none mb-3">
+              <div class="w-5/6 sm:w-1/2 p-6 tw-self-center">
+                <h3 class="text-3xl text-gray-800 font-bold leading-none mb-3">
                   Resumes don't do enough
-                  </h3>
-                  <p class="text-gray-600 mb-8">
+                </h3>
+                <p class="text-gray-600 mb-8">
                   In today's competitive job market, resumes alone often fall
                   short in showcasing the full extent of your skills,
                   creativity, and potential. While they provide a glimpse into
                   your past experiences and qualifications, they lack the depth
                   and context needed to truly differentiate you from other
                   applicants.
-                    <br />
-                    <br />
-                    That's where our platform comes in. We believe that
+                  <br />
+                  <br />
+                  That's where our platform comes in. We believe that
                   traditional resumes don't do justice to your abilities and
                   aspirations. Instead, we offer a dynamic space where you can
                   not only highlight your past achievements but also demonstrate
                   your problem-solving abilities, creativity, and collaboration
                   skills through real-world projects.
-                  </p>
-                </div>
-                <div class="w-full sm:w-1/2 p-6">
+                </p>
+              </div>
+              <div class="w-full sm:w-1/2 p-6">
                 <div class="flex items-stretch ">
-
                   <Screening />
-                  </div>
-
                 </div>
               </div>
+            </div>
             <div class="flex flex-wrap flex-col-reverse sm:flex-row">
               <div class="w-full sm:w-1/2 p-6 mt-6">
-              <div class="flex items-stretch py-0">
-
-                <Idea />
+                <div class="flex items-stretch py-0">
+                  <Idea />
                 </div>
-
               </div>
               <div class="w-full sm:w-1/2 p-6 mt-6 py-0">
                 <div class="align-middle">
@@ -233,6 +235,7 @@ function LandingPage() {
                     participants gain hands-on experience and practical skills
                     that are directly relevant to the job market.
                   </p>
+                  <br />
                 </div>
               </div>
               <div class="flex flex-wrap">
@@ -257,7 +260,9 @@ function LandingPage() {
                   </p>
                 </div>
                 <div class="w-full sm:w-1/2 p-6">
-                  <Idea/>
+                  <div class="flex items-stretch py-0">
+                    <Interview />
+                  </div>
                 </div>
               </div>
             </div>
@@ -266,7 +271,7 @@ function LandingPage() {
         <section class="bg-white border-b py-8">
           <div class="container mx-auto flex flex-wrap pt-4 pb-12">
             <h2 class="w-full my-2 text-5xl font-bold leading-tight text-center text-gray-800">
-              Title
+              Featured Postings
             </h2>
             <div class="w-full mb-4">
               <div class="h-1 mx-auto gradient w-64 opacity-25 my-0 py-0 rounded-t"></div>
@@ -278,21 +283,33 @@ function LandingPage() {
                   class="flex flex-wrap no-underline hover:no-underline"
                 >
                   <p class="w-full text-gray-600 text-xs md:text-sm px-6">
-                    xGETTING STARTED
+                    Arbitrary Company Name
                   </p>
                   <div class="w-full font-bold text-xl text-gray-800 px-6">
-                    Lorem ipsum dolor sit amet.
+                    Arbitrary Project/Hackathon Name
                   </div>
                   <p class="text-gray-800 text-base px-6 mb-5">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Aliquam at ipsum eu nunc commodo posuere et sit amet ligula.
+                    About the project/hackathon and what it entails. Lorem ipsum
+                    dolor sit amet, consectetur adipiscing elit. Aliquam at
+                    ipsum
                   </p>
                 </a>
+                {/* <div class="flex tw-justify-items-center">
+
+                <Scrum />
+                </div> */}
+                <div class="h-60 w-96">
+                  <img
+                    src={hackathonImage2}
+                    class="m-8 p-6 tw-scale-150 tw-object-fill"
+                    alt="hackathon2"
+                  />
+                </div>
               </div>
               <div class="flex-none mt-auto bg-white rounded-b rounded-t-none overflow-hidden shadow p-6">
                 <div class="flex items-center justify-start">
                   <button class="mx-auto lg:mx-0 hover:underline gradient text-white font-bold rounded-full my-6 py-4 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
-                    Action
+                    Read More
                   </button>
                 </div>
               </div>
@@ -304,21 +321,29 @@ function LandingPage() {
                   class="flex flex-wrap no-underline hover:no-underline"
                 >
                   <p class="w-full text-gray-600 text-xs md:text-sm px-6">
-                    xGETTING STARTED
+                    Arbitrary Company Name
                   </p>
                   <div class="w-full font-bold text-xl text-gray-800 px-6">
-                    Lorem ipsum dolor sit amet.
+                    Arbitrary Project/Hackathon Name
                   </div>
                   <p class="text-gray-800 text-base px-6 mb-5">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Aliquam at ipsum eu nunc commodo posuere et sit amet ligula.
+                    About the project/hackathon and what it entails. Lorem ipsum
+                    dolor sit amet, consectetur adipiscing elit. Aliquam at
+                    ipsum
                   </p>
                 </a>
+                <div class="h-60 w-96">
+                  <img
+                    src={hackathonImage}
+                    class="m-6 p-6 tw-scale-150 tw-object-fill"
+                    alt="hackathon"
+                  />
+                </div>
               </div>
               <div class="flex-none mt-auto bg-white rounded-b rounded-t-none overflow-hidden shadow p-6">
                 <div class="flex items-center justify-center">
                   <button class="mx-auto lg:mx-0 hover:underline gradient text-white font-bold rounded-full my-6 py-4 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
-                    Action
+                    Read More
                   </button>
                 </div>
               </div>
@@ -330,21 +355,32 @@ function LandingPage() {
                   class="flex flex-wrap no-underline hover:no-underline"
                 >
                   <p class="w-full text-gray-600 text-xs md:text-sm px-6">
-                    xGETTING STARTED
+                    Arbitrary Company Name
                   </p>
                   <div class="w-full font-bold text-xl text-gray-800 px-6">
-                    Lorem ipsum dolor sit amet.
+                    Arbitrary Project/Hackathon Name
                   </div>
                   <p class="text-gray-800 text-base px-6 mb-5">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Aliquam at ipsum eu nunc commodo posuere et sit amet ligula.
+                    About the project/hackathon and what it entails. Lorem ipsum
+                    dolor sit amet, consectetur adipiscing elit. Aliquam at
+                    ipsum
                   </p>
                 </a>
+                <div class="h-60 w-96">
+                  <img
+                    src={hackathonImage3}
+                    class="m-8 p-6 tw-scale-150 tw-object-fill"
+                    alt="hackathon3"
+                  />
+                </div>
+                {/* <div class="flex items-center justify-end"> */}
+                  {/* <Project /> */}
+                {/* </div> */}
               </div>
               <div class="flex-none mt-auto bg-white rounded-b rounded-t-none overflow-hidden shadow p-6">
                 <div class="flex items-center justify-end">
                   <button class="mx-auto lg:mx-0 hover:underline gradient text-white font-bold rounded-full my-6 py-4 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
-                    Action
+                    Read More
                   </button>
                 </div>
               </div>
@@ -398,27 +434,9 @@ function LandingPage() {
             <div class="w-full flex flex-col md:flex-row py-6">
               <div class="flex-1 mb-6 text-black">
                 <a
-                  class="text-pink-600 no-underline hover:no-underline font-bold text-2xl lg:text-4xl"
+                  class="no-underline hover:no-underline font-bold text-2xl lg:text-4xl"
                   href="#"
                 >
-                  <svg
-                    class="h-8 fill-current inline"
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 512.005 512.005"
-                  >
-                    <rect
-                      fill="#2a2a31"
-                      x="16.539"
-                      y="425.626"
-                      width="479.767"
-                      height="50.502"
-                      transform="matrix(1,0,0,1,0,0)"
-                    />
-                    <path
-                      class="plane-take-off"
-                      d=" M 510.7 189.151 C 505.271 168.95 484.565 156.956 464.365 162.385 L 330.156 198.367 L 155.924 35.878 L 107.19 49.008 L 211.729 230.183 L 86.232 263.767 L 36.614 224.754 L 0 234.603 L 45.957 314.27 L 65.274 347.727 L 105.802 336.869 L 240.011 300.886 L 349.726 271.469 L 483.935 235.486 C 504.134 230.057 516.129 209.352 510.7 189.151 Z "
-                    />
-                  </svg>
                   PROJECT: Pioneer
                 </a>
               </div>
