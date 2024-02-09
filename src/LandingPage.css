@@ -1,0 +1,7 @@
+.gradient {
+  background: linear-gradient(90deg, #31304d 0%, #161a30 100%);
+}
+
+.custom-bg{
+    background: linear-gradient(90deg, #31304d 0%, #161a30 100%);
+}
